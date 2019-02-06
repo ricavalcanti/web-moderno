@@ -4,7 +4,9 @@ console.log(MeuObjeto.prototype)
 const obj1 = new MeuObjeto
 const obj2 = new MeuObjeto
 console.log(obj1.__proto__ === obj2.__proto__)
-console.log(MeuObjeto.prototype === obj1.__proto__)
+console.log(MeuObjeto.prototype === obj1.__proto__) //criando obj a partir de uma func. contrutora, o proto
+                                                    // vai apontar pra funç.prototype, dif. do literal que aponta pro
+                                                    //object.prototype
 
 MeuObjeto.prototype.nome = 'Anônimo'
 MeuObjeto.prototype.falar = function() {
@@ -22,7 +24,7 @@ obj3.nome = 'Obj3'
 obj3.falar()
 
 // Resumindo a loucura...
-console.log((new MeuObjeto).__proto__ === MeuObjeto.prototype)
+console.log((new MeuObjeto).__proto__ === MeuObjeto.prototype) //criar um obj a partir de uma função, o proto vai apontar pra propiaFunc.prototype
 console.log(MeuObjeto.__proto__ === Function.prototype)
 console.log(Function.prototype.__proto__ === Object.prototype)
 console.log(Object.prototype.__proto__ === null)

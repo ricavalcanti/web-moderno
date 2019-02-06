@@ -4,8 +4,8 @@ Object.prototype.attr0 = '0' // não faça isso em casa!
 const avo = { attr1: 'A' }
 const pai = { __proto__: avo, attr2: 'B', attr3: '3' }
 const filho = { __proto__: pai, attr3: 'C' }
-console.log(filho.attr0, filho.attr1, filho.attr2, filho.attr3)
-
+console.log(filho.attr0, filho.attr1, filho.attr2, filho.attr3) //sombreamento: attr3 está no propio objeto,
+                                                                // n precia procurar no resto da cadeia de proto
 const carro = {
     velAtual: 0,
     velMax: 200,
@@ -23,13 +23,13 @@ const carro = {
 
 const ferrari = {
     modelo: 'F40',
-    velMax: 324 // shadowing
+    velMax: 324 // shadowing/sombreamento
 }
 
 const volvo = {
     modelo: 'V40',
     status() {
-        return `${this.modelo}: ${super.status()}`
+        return `${this.modelo}: ${super.status()}` //usar o método do prototipo, por isso usa o super
     }
 }
 

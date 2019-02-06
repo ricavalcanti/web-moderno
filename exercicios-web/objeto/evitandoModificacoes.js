@@ -1,5 +1,6 @@
 // Object.preventExtensions
-const produto = Object.preventExtensions({
+//cessar um pouco da flexibilidade do js para ter mais previsibilidade do código
+const produto = Object.preventExtensions({ //não pode adicionar novos atributos, exclusivamente.
     nome: 'Qualquer', preco: 1.99, tag: 'promoção'
 })
 console.log('Extensível:', Object.isExtensible(produto))

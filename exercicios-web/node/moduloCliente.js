@@ -9,3 +9,5 @@ console.log(moduloA)
 console.log(moduloB.bomDia)
 console.log(moduloB.boaNoite())
 console.log(moduloB)
+
+//p pacotes de terceiros pode baixar pelo npm, no terminal

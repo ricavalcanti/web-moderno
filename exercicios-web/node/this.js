@@ -12,3 +12,6 @@ function logThis() {
 }
 
 logThis()
+
+//dentro da func: this === global
+//fora da func: this === module.exports

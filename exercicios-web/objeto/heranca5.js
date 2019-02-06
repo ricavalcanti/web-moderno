@@ -15,7 +15,7 @@ Array.prototype.first = function() {
 console.log([1, 2, 3, 4, 5].first())
 console.log(['a', 'b', 'c'].first())
 
-String.prototype.toString = function () {
+String.prototype.toString = function () { //não faça isso em casa!
     return 'Lascou tudo'
 }
 

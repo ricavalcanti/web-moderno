@@ -6,7 +6,7 @@ console.log(pessoa)
 // pessoa -> 456 -> {...}
 // pessoa = { nome: 'Ana' }
 
-Object.freeze(pessoa)
+Object.freeze(pessoa) //congelando o objeto pessoa, n consegue mais mexer n objeto 
 
 pessoa.nome = 'Maria'
 pessoa.end = 'Rua ABC'

@@ -21,10 +21,10 @@ console.log(aprovados)
 aprovados.sort()
 console.log(aprovados)
 
-delete aprovados[1]
+delete aprovados[1] //não reorganiza!
 console.log(aprovados[1])
 console.log(aprovados[2])
 
 aprovados = ['Bia', 'Carlos', 'Ana']
-aprovados.splice(1, 1)
+aprovados.splice(1, 1) //(indiceInicio,qntsExcluir)
 console.log(aprovados)

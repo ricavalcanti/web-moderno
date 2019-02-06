@@ -8,7 +8,7 @@ console.log(pilotos)
 pilotos.shift() // remove o primeiro!
 console.log(pilotos)
 
-pilotos.unshift('Hamilton')
+pilotos.unshift('Hamilton') //adiciona na primeira posição
 console.log(pilotos)
 
 // splice pode adicionar e remover elementos
@@ -24,5 +24,5 @@ console.log(pilotos)
 const algunsPilotos1 = pilotos.slice(2) // novo array
 console.log(algunsPilotos1)
 
-const algunsPilotos2 = pilotos.slice(1, 4)
+const algunsPilotos2 = pilotos.slice(1, 4) //(aPartirDe, ateExclusivo)
 console.log(algunsPilotos2)

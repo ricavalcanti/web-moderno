@@ -9,8 +9,8 @@ const volvo = {
 }
 
 console.log(ferrari.prototype)
-console.log(ferrari.__proto__)
-console.log(ferrari.__proto__ === Object.prototype)
+console.log(ferrari.__proto__) //acessar o prototipo pai/avô... toda cadeia de prototipo
+console.log(ferrari.__proto__ === Object.prototype) //por padrão aponta p/ object.prototype
 console.log(volvo.__proto__ === Object.prototype)
 console.log(Object.prototype.__proto__ === null)
 

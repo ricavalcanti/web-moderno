@@ -6,13 +6,13 @@ const pessoa = {
 
 console.log(Object.keys(pessoa))
 console.log(Object.values(pessoa))
-console.log(Object.entries(pessoa))
+console.log(Object.entries(pessoa)) //registro de chave/valor
 
-Object.entries(pessoa).forEach(([chave, valor]) => {
+Object.entries(pessoa).forEach(([chave, valor]) => { //destructuring
     console.log(`${chave}: ${valor}`)
 })
 
-Object.defineProperty(pessoa, 'dataNascimento', {
+Object.defineProperty(pessoa, 'dataNascimento', { //reflexion: ler o conteudo do obj, listar suas propiedades, valores. 
     enumerable: true,
     writable: false,
     value: '01/01/2019'
@@ -31,3 +31,5 @@ const obj = Object.assign(dest, o1, o2)
 Object.freeze(obj)
 obj.c = 1234
 console.log(obj)
+
+//Object.setPrototypeOf(ferrari, carro)
